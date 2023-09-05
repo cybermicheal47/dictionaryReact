@@ -1,0 +1,55 @@
+/* Styles for the .container class */
+.container {
+  background-color: green;
+  text-align: center;
+
+}
+
+/* Global styles for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.search input[type=text]{
+  width: 400px;
+  height: 50px;
+  border-radius:25px;
+  border: none;
+}
+
+.btnsearch{
+background-color: green;
+color : white;
+padding: 10px;
+cursor: pointer;
+
+}
+.btnsearch:hover {
+  background-color: black;
+}
+
+.meaning{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ margin: 10px;
+ margin-left: 300px;
+ padding: 10px;
+
+}
+
+
+
+
+/* Styles for smaller screens (mobile) */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .search input[type="text"] {
+      width: 100%; /* Make the input full width */
+      margin-bottom: 10px; /* Add some bottom margin for spacing */
+  }
+}
