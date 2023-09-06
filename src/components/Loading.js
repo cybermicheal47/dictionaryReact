@@ -4,10 +4,11 @@ import spinnerimg from './assests/spinner.gif'
 function Loading() {
   return (
     <>
-       <div className='w-100 mt-20'>
+
+       <div className='spinwhole'>
        <img
         width={180}
-        className='text-center mx-auto'
+        className='spintext'
         src={spinnerimg}
         alt='Loading...'
       />

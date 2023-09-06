@@ -39,6 +39,60 @@ cursor: pointer;
 
 }
 
+.spinwhole{
+ width: 100%;
+ margin-top : 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.spintext{
+
+  text-align: center;
+   margin: auto;
+}
+
+.notfound{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Background color */
+  
+}
+
+
+button {
+  margin-top: 20px;
+  
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: black; /* Text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  
+}
+
+button:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+a {
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
 
 
 

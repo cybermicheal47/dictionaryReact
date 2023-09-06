@@ -12,6 +12,12 @@ const Dictionaryreducer = (state, action) =>{
             loading: true 
         }
 
+    case 'Fetch_Error' :
+        return  {
+            loading: false,
+            words: [],
+            error: 'No Definition Found'
+        }
         default : 
         return state
     }
