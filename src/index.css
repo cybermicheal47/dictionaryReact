@@ -19,14 +19,14 @@
 }
 
 .btnsearch{
-background-color: green;
+background-color: black;
 color : white;
 padding: 10px;
 cursor: pointer;
 
 }
 .btnsearch:hover {
-  background-color: black;
+  background-color: white;
 }
 
 .meaning{
