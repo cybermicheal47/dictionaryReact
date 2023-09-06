@@ -2,14 +2,9 @@ import React, { useState, useContext } from 'react';
 import Dictionarycontext from '../context/Dictionarycontext';
 
 function Header() {
-  const [text, setText] = useState(''); // Initialize text with an empty string
- 
-
-  const { loading, words, fetchWords } = useContext(Dictionarycontext);
+  const { loading, words, fetchWords, text, setText, error} = useContext(Dictionarycontext);
 
   const handleChange = (e) => setText(e.target.value);
-
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,8 +13,6 @@ function Header() {
       alert('Please Enter Something');
     } else {
       fetchWords(text);
-      
-      //setText(''); // Clear the input field after submitting
     }
   };
 
@@ -41,9 +34,11 @@ function Header() {
           <button type="submit" className="btnsearch">
             Search
           </button>
-
         </form>
-        Results for {text}
+
+        {words.length > 0 ? `Results for ${text}` : null}
+  
+
         <br />
       </div>
     </>
